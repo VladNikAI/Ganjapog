@@ -1,5 +1,6 @@
 .logo {
-  padding: 0.5px 47%;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
   border-bottom: 4px solid black;
 }
 .logo h1 {
@@ -10,13 +11,15 @@
 .menu-bar {
   text-align: center;
   list-style-type: none;
+  padding-left: 0;
 }
 .menu-bar li {
   display: inline-block;
   padding: 10px 25px;
 }
-.menu-bar ul li:hover {
+.menu-bar li:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .main-container {
@@ -53,13 +56,13 @@
   width: 550px;
   margin-left: 10px;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 
 .shopping-item {
-  flex-shrink: 1;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .shopping-item img {
@@ -80,15 +83,17 @@
   margin-right: 15px;
   background-color: black;
   text-align: center;
+  cursor: pointer;
 }
 
-.cart:hover {
+.shopping-item p:hover {
   color: black;
   background-color: #dfdfdf;
 }
 
 .bottom-line {
-  margin-top: 0;
+  padding-left: 0;
+  margin-bottom: 0;
   text-align: center;
   list-style-type: none;
   background-color: black;
@@ -100,6 +105,5 @@
 
 .bottom-line li {
   display: inline-block;
-  padding-top: 3px;
   color: white;
 }
